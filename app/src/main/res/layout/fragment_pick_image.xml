@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.example.admin.practice1.customview.main.SquareFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:id="@+id/layoutPreview"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/previewContainer"
+            />
+        <io.togoto.imagezoomcrop.cropoverlay.CropOverlayView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:guideLines="false"
+            app:marginSide="0dp"
+            />
+    </com.example.admin.practice1.customview.main.SquareFrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutPreview"
+        android:id="@+id/rcvPickImage"
+        />
+</LinearLayout>

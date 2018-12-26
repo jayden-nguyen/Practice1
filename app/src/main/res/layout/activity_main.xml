@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:elevation="1dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutMainTabs"
+        >
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabIndicatorHeight="0dp"
+        android:id="@+id/mainTabs"
+        />
+    </android.support.v7.widget.CardView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutMainTabs"
+        android:id="@+id/mainContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>
