@@ -5,5 +5,5 @@ import com.example.admin.practice1.data.response.PostItem
 import com.example.admin.practice1.data.response.PostsResponse
 
 interface TopPageView: BaseView {
-    fun renderTestPost(data: PostsResponse)
+    fun renderRegisterResult(success: Boolean)
 }

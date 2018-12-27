@@ -31,7 +31,9 @@ class MainActivity : BaseActivity() {
         openTimelineFragment()
         mainTabs.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
             override fun onTabReselected(tab: TabLayout.Tab?) {
-
+                if (tab?.position == 1) {
+                    setCurrentTabSelected(tab.position)
+                }
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab?) {

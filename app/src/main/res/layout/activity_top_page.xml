@@ -1,38 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="14sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tvUserName"
+        />
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        >
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Login"
-            android:id="@+id/btnLogin"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Register"
-            android:id="@+id/btnRegister"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Test API"
-            android:id="@+id/btnTestApi"
-            />
-    </LinearLayout>
+        android:layout_height="40dp"
+        android:id="@+id/edtUserName"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="14sp"
+        android:layout_below="@id/edtUserName"
+        android:layout_marginStart="40dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tvPassword"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edtPassword"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="14sp"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginStart="40dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tvGender"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edtGender"
+        android:layout_below="@id/tvGender"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textSize="14sp"
+        android:layout_below="@id/edtGender"
+        android:layout_marginStart="40dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tvDob"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edtDob"
+        android:layout_below="@id/tvDob"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/edtDob"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Register" />
 
 </RelativeLayout>

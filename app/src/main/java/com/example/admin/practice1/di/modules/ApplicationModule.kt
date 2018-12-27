@@ -38,7 +38,7 @@ class ApplicationModule(private val mContext: Context) {
     @Provides
     fun provideTestRetrofit(client: OkHttpClient): Retrofit{
         return Retrofit.Builder()
-                .baseUrl("http://jsonplaceholder.typicode.com")
+                .baseUrl(BASE_URL)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)

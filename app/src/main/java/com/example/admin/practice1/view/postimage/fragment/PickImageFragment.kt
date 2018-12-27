@@ -64,6 +64,7 @@ class PickImageFragment: BaseFragment(), PickImageView, PickImageRecyclerViewAda
 
     override fun renderPhoto(photoPathList: ArrayList<String>) {
         mAdapter.addPhotopathList(photoPathList)
+        showImageSelected(photoPathList[0])
     }
 
     override fun showLoading() {
@@ -107,7 +108,7 @@ class PickImageFragment: BaseFragment(), PickImageView, PickImageRecyclerViewAda
         }
         val bitmap = getBitmap(Uri.fromFile(File(photoPath)))
         val drawable = BitmapDrawable(resources, bitmap)
-        val minScale = (mImgView as PhotoView).setMinimumScaleToFit(drawable)
+        val minScale = (mImgView as PhotoView).setMinimumScaleToFit(drawable) * 2
         (mImgView as PhotoView).apply {
             maximumScale = minScale * 3
             mediumScale = minScale * 2
